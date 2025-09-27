@@ -4,7 +4,7 @@
 - ### [:spiral_notepad: Comentários](#spiral_notepad-comentários-1)
 - ### [:open_file_folder: Estrutura do Projeto](#open_file_folder-estrutura-do-projeto-1)
 - ### [:gear: Como rodar](#gear-como-rodar-1)
-- ### [:arrow_down: Baixar o projeto](https://github.com/hvslucas/chatmultiuser/archive/refs/heads/main.zip)
+- ### [:arrow_down: Baixar o projeto](https://github.com/hvslucas/Servidor-de-Chat/archive/refs/heads/main.zip)
 
 ## Disciplina de Linguagem de Programação II (Programação Concorrente)
 
