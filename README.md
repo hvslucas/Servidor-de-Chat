@@ -36,11 +36,24 @@ Sistema completo de chat em rede com:
 - **Logging**: registro de todas as atividades com libtslog
 - **Comunicação bidirecional**: threads separadas para envio e recebimento
 
+### Etapa 3 - Sistema Completo com Otimizações 
+
+uncionalidades Implementadas:
+- **Arquitetura Produtor-Consumidor**: Thread worker dedicada para processamento de mensagens
+- **Fila Thread-Safe**: Buffer circular com semáforos para controle de slots
+- **Broadcast Assíncrono**: Mensagens processadas em background sem bloquear threads de cliente
+- **Histórico de Mensagens**: Últimas 100 mensagens armazenadas e enviadas para novos clientes
+- **Proteção Completa**: Mutex para estruturas compartilhadas (clientes, histórico)
+- **Shutdown Graceful**: Finalização controlada de threads e liberação de recursos
+
+**Técnicas de Concorrência Aplicadas:**
+- `sem_t` (semáforos POSIX) para controle de filas
+- `ThreadSafeQueue` como monitor para sincronização
+- Variáveis atômicas para flags de controle
+
 ## :spiral_notepad: Comentários:
 
-### Comentários gerais:  
-
-### Etapa 1:
+- Acabei não preenchendo nas etapas, pois fiz os relatórios presentes no diretório
 
 ## :open_file_folder: Estrutura do Projeto
 
@@ -50,8 +63,10 @@ Sistema completo de chat em rede com:
 ├── bin/               # Binários compilados - Aparece após rodar o make
 ├── include/
 │   ├── libtslog.h    # Header da biblioteca
+│   └── thread_safe_queue.h # Header da fila thread-safe
 ├── src/
 │   ├── libtslog.c           # Implementação da libtslog
+│   ├── thread_safe_queue.c # Implementação da fila thread-safe
 │   ├── servidor_chat.c      # Servidor multithread
 │   └── cliente_chat.c       # Cliente do chat
 ├── tests/
@@ -62,9 +77,18 @@ Sistema completo de chat em rede com:
 └── README.md             # Este arquivo, documenta o projeto
 ```
 
-### Arquitetura
+O servidor utiliza uma arquitetura **Produtor-Consumidor** onde:
+- **Threads dos clientes** atuam como produtores, colocando mensagens na fila
+- **Thread worker** atua como consumidor, processando mensagens da fila e fazendo broadcast
+
+### Arquitetura -- Etapa 1
 
 [<img width="525" height="443" alt="arquitetura" src="https://github.com/user-attachments/assets/1ef93080-4b0d-440d-9689-a27adfda829f" />](#computerspeech_balloon-servidor-de-chat-multiusuário-tcp)
+
+### Arquitetura -- Etapa 3
+
+[<img width="799" height="697" alt="deepseek_mermaid_20251006_630429" src="https://github.com/user-attachments/assets/886b71e5-2920-452f-b1bf-7ac575f07812" />](#computerspeech_balloon-servidor-de-chat-multiusuário-tcp)
+
 
 ## :gear: Como rodar
 
@@ -97,7 +121,7 @@ chmod +x run.sh
 2. Executar o script:
 
 ```bash
-./script.sh
+./run.sh
 ```
 
 3. O script irá fornecer as opções:
