@@ -1,7 +1,7 @@
 # 	:computer::speech_balloon: Servidor de Chat Multiusuário (TCP)
 
 - ### [:dart: Objetivo](#dart-objetivo-1)
-- ### [:spiral_notepad: Comentários](#spiral_notepad-comentários-1)
+- ### [:movie_camera:Vídeo de Demonstração](video.mp4)
 - ### [:open_file_folder: Estrutura do Projeto](#open_file_folder-estrutura-do-projeto-1)
 - ### [:gear: Como rodar](#gear-como-rodar-1)
 - ### [:arrow_down: Baixar o projeto](https://github.com/hvslucas/chatmultiuser/archive/refs/heads/main.zip)
