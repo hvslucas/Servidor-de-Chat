@@ -75,6 +75,9 @@ uncionalidades Implementadas:
 ├── Makefile              # Automação da compilação
 ├── run.sh                # Script interativo de execução
 └── README.md             # Este arquivo, documenta o projeto
+
+
+*arquivos de mídia e documentos omitidos
 ```
 
 O servidor utiliza uma arquitetura **Produtor-Consumidor** onde:
