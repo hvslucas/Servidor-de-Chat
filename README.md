@@ -83,13 +83,11 @@ O servidor utiliza uma arquitetura **Produtor-Consumidor** onde:
 
 ### Arquitetura -- Etapa 1
 
-[<img width="799" height="697" alt="Untitled design" src="https://github.com/user-attachments/assets/29ec098c-d3b8-4d30-9a77-c12403fceb58" />](#computerspeech_balloon-servidor-de-chat-multiusuário-tcp)
-
+[<img width="525" height="443" alt="arquitetura" src="https://github.com/user-attachments/assets/d44b7305-67ba-436e-a5d4-d79ab5667042" />](#computerspeech_balloon-servidor-de-chat-multiusuário-tcp)
 
 ### Arquitetura -- Etapa 3
 
-[<img width="799" height="697" alt="deepseek_mermaid_20251006_630429" src="https://github.com/user-attachments/assets/886b71e5-2920-452f-b1bf-7ac575f07812" />](#computerspeech_balloon-servidor-de-chat-multiusuário-tcp)
-
+[<img width="799" height="697" alt="Untitled design" src="https://github.com/user-attachments/assets/29ec098c-d3b8-4d30-9a77-c12403fceb58" />](#computerspeech_balloon-servidor-de-chat-multiusuário-tcp)
 
 ## :gear: Como rodar
 
